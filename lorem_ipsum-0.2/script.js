@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
 function $(selector) {
-    return document.querySelector(selector);
+    return document.querySelector(selector)
 }
 
 // déclaration du contenu des sections
@@ -30,8 +30,9 @@ let sections = [
         description: "Cras elementum nisl velit, feugiat laoreet elit congue ut",
         content: "Cras bibendum dolor in varius finibus. Cras elementum nisl velit, feugiat laoreet elit congue ut. Cras sit amet est felis. Curabitur congue sollicitudin dolor id tincidunt. Donec lobortis tincidunt fermentum. Integer imperdiet lacus eu semper finibus. Morbi orci tortor, tincidunt ut sapien at, finibus facilisis lectus. Morbi eget accumsan dui. Duis aliquam at lectus et luctus. Cras non sagittis libero."
     }
-];
+]
 
+// add sections to the main element
 for(let key in sections) {
     $('main').innerHTML += (
         '<section>\
@@ -44,5 +45,5 @@ for(let key in sections) {
             ' + sections[key].content + '\
             </p>\
         </section>'
-    );
+    )
 }

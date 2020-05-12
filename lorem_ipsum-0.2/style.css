@@ -23,15 +23,36 @@ body {
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.2em;
 }
 
 body img {
     max-width: 100%;
     height: auto;
+}
+
+body nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+body nav ul li {
+    padding: 15px;
+}
+
+body nav ul li a {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    background-color: gray;
+    color: white;
 }
 
 /* header */
@@ -54,35 +75,24 @@ header div {
     max-width: 300px;
 }
 
+#headerLeft img {
+    max-height: 150px;
+    width: auto;
+}
+
+
 #headerLeft h1 a {
     color: gray;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
-#headerLeft h2 {
-    font-size: 1em;
-    font-weight: lighter;
-    color: darkgray;
-    font-style: italic;
+#headerRight p {
     text-align: center;
-}
-
-#headerRight nav ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-}
-
-#headerRight nav ul li {
-    padding: 15px;
-}
-
-#headerRight nav ul li a {
-    padding: 5px;
-    text-decoration: none;
-    color: steelblue;
+    font-size: 1.2em;
+    font-weight: lighter;
+    font-style: italic;
+    color: darkgray;
 }
 
 /* main */
@@ -91,7 +101,6 @@ main {
     flex: 1;    /* body container */
     display: flex;
     flex-direction: column;
-    padding: 25px;
 }
 
 /* section */
@@ -101,6 +110,7 @@ section {
     flex-direction: column;
     align-items: center;
     margin-bottom: 25px;
+    font-size: 1.2em;
 }
 
 section header {
@@ -144,22 +154,4 @@ footer {
 footer p {
     color: darkgray;
     font-style: italic;
-}
-
-footer ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-}
-
-footer ul li {
-    padding: 15px;
-}
-
-footer ul li a {
-    padding: 5px;
-    text-decoration: none;
-    color: steelblue;
 }
