@@ -1,6 +1,7 @@
 # A Lorem Ipsum Web Page
 
 This web page is a simple HTML/CSS composed of a header, main and footer.
+The demo on Netlify https://mystifying-shannon-99657d.netlify.app/
 
 ## HTML elements
 
