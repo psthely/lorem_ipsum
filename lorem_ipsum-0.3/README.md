@@ -1,3 +1,5 @@
+The demo on Netlify https://zealous-khorana-fd76be.netlify.app/
+
 # Components based web page
 
 The idea here is to dynamically create individual components.
