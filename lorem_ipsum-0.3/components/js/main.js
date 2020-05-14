@@ -1,5 +1,4 @@
-// data
-let sections = [
+const section = [
     {
         title: "Lorem Ipsum",
         imageSrc: "https://upload.wikimedia.org/wikipedia/commons/6/65/001-teacher.svg",
@@ -27,17 +26,17 @@ let sections = [
 ]
 
 // component
-$('main').setAttribute('class', 'container')
-for(let key in sections) {
+$('main').setAttribute('class', 'container column')
+for(let iSection in section) {
     $('main').innerHTML += (
-        '<section class="container">\
-            <header class="container">\
-                <h1>' + sections[key].title + '</h1>\
-                <img src="' + sections[key].imageSrc + '" alt="" />\
-                <h2>' + sections[key].description + '</h2>\
+        '<section class="container column">\
+            <header class="container column">\
+                <h1>' + section[iSection].title + '</h1>\
+                <img src="' + section[iSection].imageSrc + '" alt="" />\
+                <h2>' + section[iSection].description + '</h2>\
             </header>\
             <p>\
-            ' + sections[key].content + '\
+            ' + section[iSection].content + '\
             </p>\
         </section>'
     )
