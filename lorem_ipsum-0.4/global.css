@@ -1,0 +1,36 @@
+/* This file contains the global CSS properties to apply to the page */
+/* *******************************************************************/
+
+@import 'components/css/header.css';
+@import 'components/css/navLink.css';
+@import 'components/css/main.css';
+@import 'components/css/footer.css';
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}

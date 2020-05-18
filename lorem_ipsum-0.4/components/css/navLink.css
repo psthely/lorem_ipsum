@@ -1,0 +1,17 @@
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    background-color: gray;
+    color: white;
+}
