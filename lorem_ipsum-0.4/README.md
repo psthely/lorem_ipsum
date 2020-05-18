@@ -1,3 +1,5 @@
+The demo site on Netlify https://vigorous-lalande-b6b5c4.netlify.app/
+
 # Full JavaScript Web Page
 
 The components are now declared as Strings. The index.html file only contains
