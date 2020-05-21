@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <script>
+        'use strict'
+
+        /* variables */
+        /*******************************************************/
+        // declare ids
+        const addId = {
+            headerLeft: 'id="headerLeft"',
+            headerRight: 'id="headerRight"',
+            headerNav: 'id="headerNav"',
+            footerNav: 'id="footerNav"'
+        }
+        // map css classes with javascript
+        const addClass = {
+            container: 'class="container"',
+            containerColumn: 'class="container column"',
+            containerRow: 'class="container row"',
+            containerRowWrap: 'class="container row wrap"'
+        }
+
+        /* functions */
+        /*******************************************************/
+        // declare the $ querySelector
+        function $(selector) {
+            return document.querySelector(selector)
+        }
+
+        // render the component to the parent element
+        function render(component, parent) {
+            parent.innerHTML += component
+        }
+    </script>
+
+    <script src="components/js/header.js"></script>
+    <script src="components/js/navLink.js"></script>
+    <script src="components/js/main.js"></script>
+    <script src="components/js/footer.js"></script>
+
+    <script>
+        // render components
+        render(header, $('body'))
+        render(navLink, $('#headerNav'))
+        render(main, $('body'))
+        render(footer, $('body'))
+        render(navLink, $('#footerNav'))
+    </script>
+</body>
+</html>
