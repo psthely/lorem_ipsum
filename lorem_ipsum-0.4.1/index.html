@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <script>
+        'use strict'
+
+        /* functions */
+        /*******************************************************/
+        // declare the $ querySelector
+        // string: selector
+        // return: DOMElement
+        function $(selector) {
+            return document.querySelector(selector)
+        }
+
+        // add an attribute to an element
+        // string: name
+        // string: value
+        // return: string
+        function addAttr(name, value) {
+            return name + '="' + value + '"'
+        }
+
+        // render the component to the parent element
+        function render(component, parent) {
+            parent.innerHTML += component
+        }
+    </script>
+
+    <script src="components/js/header.js"></script>
+    <script src="components/js/navLink.js"></script>
+    <script src="components/js/main.js"></script>
+    <script src="components/js/footer.js"></script>
+
+    <script>
+        // render components
+        render(header, $('body'))
+        render(navLink, $('#headerNav'))
+        render(main, $('body'))
+        render(footer, $('body'))
+        render(navLink, $('#footerNav'))
+    </script>
+</body>
+</html>
