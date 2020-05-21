@@ -17,3 +17,6 @@ to understand the flow of execution.
 ## Update 0.4.1
 A new function `addAttr(name, value)` is declared. This is more convenient to add
 any type of attributes and values to the HTML elements.
+
+## Update 0.4.2
+The `$(selectors)` function now accepts multiple css selectors, so you can render a same component to different ParentNodes.

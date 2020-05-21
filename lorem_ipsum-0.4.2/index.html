@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <!-- define the main app div -->
+    <!-- **************************************************** -->
+    <div id="app"></div>
+
+    <!-- declare functions -->
+    <!-- **************************************************** -->
+    <script>
+        'use strict'
+        
+        // declare the $ querySelector
+        // string[]: selectors
+        // return: string[]
+        function $(selectors) {
+            return selectors.split(' ')
+        }
+
+        // add an attribute to an element
+        // string: name
+        // string: value
+        // return: string
+        function addAttr(name, value) {
+            return name + '="' + value + '"'
+        }
+
+        // render the component to the parents elements
+        // string: component
+        // string[]: parents
+        function render(component, parents) {
+            parents.forEach(parent => {
+                const parentNode = document.querySelector(parent)
+                parentNode.innerHTML += component
+            })
+        }
+    </script>
+
+    <!-- call the components -->
+    <!-- **************************************************** -->
+    <script src="components/js/header.js"></script>
+    <script src="components/js/navLink.js"></script>
+    <script src="components/js/main.js"></script>
+    <script src="components/js/footer.js"></script>
+
+    <!-- render the components -->
+    <!-- **************************************************** -->
+    <script>
+        // render components
+        render(header, $('#app'))
+        render(main, $('#app'))
+        render(footer, $('#app'))
+        render(navLink, $('#headerNav #footerNav'))
+    </script>
+</body>
+</html>
