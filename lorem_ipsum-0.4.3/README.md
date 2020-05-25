@@ -20,3 +20,8 @@ any type of attributes and values to the HTML elements.
 
 ## Update 0.4.2
 The `$(selectors)` function now accepts multiple css selectors, so you can render a same component to different ParentNodes.
+
+## Update 0.4.3
+Declaring components as JavaScript modules to import in index.html. Using Tachyons classes
+to replace the global container properties. In the next versions, Tachyons classes will
+replace all the components css files.
