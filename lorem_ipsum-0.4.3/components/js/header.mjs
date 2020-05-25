@@ -6,7 +6,7 @@ const headerData = {
 }
 
 const header = (
-    '<header ' + addAttr('class', 'container column') + '>\
+    '<header ' + addAttr('class', 'flex flex-column items-center') + '>\
         <div ' + addAttr('id', 'headerLeft') + ' ' + addAttr('class', 'container column') + '>\
             <a ' + addAttr('href', headerData.href) + '><img ' + addAttr('src', headerData.imageSrc) + '></a>\
             <h1><a ' + addAttr('href', headerData.href) + '>' + headerData.title + '</a></h1>\
