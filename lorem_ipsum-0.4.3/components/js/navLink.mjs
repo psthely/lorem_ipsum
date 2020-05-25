@@ -21,7 +21,7 @@ navLinksData.forEach(
 
 const navLink = (
     '<nav>\
-        <ul ' + addAttr('class', 'container row wrap') + '>'
+        <ul ' + addAttr('class', 'flex flex-row flex-wrap justify-center') + '>'
         + linkList +
         '</ul>\
     </nav>'

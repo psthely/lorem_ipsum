@@ -11,7 +11,7 @@
 <body>
     <!-- define the main app div -->
     <!-- **************************************************** -->
-    <div id="app"></div>
+    <div id="app" class="flex flex-column .serif"></div>
 
     <!-- render the components -->
     <!-- **************************************************** -->
@@ -20,7 +20,7 @@
         import main from './components/js/main.mjs'
         import footer from './components/js/footer.mjs'
         import navLink from './components/js/navLink.mjs'
-        
+
         render(header, $('#app'))
         render(main, $('#app'))
         render(footer, $('#app'))

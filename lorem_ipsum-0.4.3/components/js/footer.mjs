@@ -3,7 +3,7 @@ const footerData = {
 }
 
 const footer = (
-    '<footer ' + addAttr('class', 'container column') + '>\
+    '<footer ' + addAttr('class', 'flex flex-column items-center') + '>\
     <div ' + addAttr('id', 'footerNav') + '></div>\
         <p>' + footerData.text + '</p>\
     </footer>'

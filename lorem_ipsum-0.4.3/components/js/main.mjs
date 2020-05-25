@@ -28,8 +28,8 @@ const sectionsData = [
 let sectionList = new String()
 sectionsData.forEach(
     section => sectionList += (
-        '<section ' + addAttr('class', 'container column') + '>\
-            <header ' + addAttr('class', 'container column') + '>\
+        '<section ' + addAttr('class', 'flex flex-column items-center') + '>\
+            <header ' + addAttr('class', 'flex flex-column items-center') + '>\
                 <h1>' + section.title + '</h1>\
                 <img ' + addAttr('src', section.imageSrc) + '/>\
                 <h2>' + section.description + '</h2>\
@@ -42,7 +42,7 @@ sectionsData.forEach(
 )
 
 const main = (
-    '<main ' + addAttr('class', 'container column') + '>'
+    '<main ' + addAttr('class', 'flex flex-column items-center') + '>'
     + sectionList +
     '</main>'
 )
