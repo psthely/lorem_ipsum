@@ -13,19 +13,14 @@
     <!-- **************************************************** -->
     <div id="app"></div>
 
-    <!-- call the components -->
+    <!-- render the components -->
     <!-- **************************************************** -->
     <script type="module">
         import header from './components/js/header.mjs'
         import main from './components/js/main.mjs'
         import footer from './components/js/footer.mjs'
         import navLink from './components/js/navLink.mjs'
-    </script>
-
-    <!-- render the components -->
-    <!-- **************************************************** -->
-    <script>
-        // render components
+        
         render(header, $('#app'))
         render(main, $('#app'))
         render(footer, $('#app'))
