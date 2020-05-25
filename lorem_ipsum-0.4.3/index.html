@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum</title>
+    <link rel="stylesheet" href="tachyons.min.css">
+    <link rel="stylesheet" href="global.css">
+    <script src="global.js"></script>
+</head>
+<body>
+    <!-- define the main app div -->
+    <!-- **************************************************** -->
+    <div id="app"></div>
+
+    <!-- call the components -->
+    <!-- **************************************************** -->
+    <script type="module">
+        import header from './components/js/header.mjs'
+        import main from './components/js/main.mjs'
+        import footer from './components/js/footer.mjs'
+        import navLink from './components/js/navLink.mjs'
+    </script>
+
+    <!-- render the components -->
+    <!-- **************************************************** -->
+    <script>
+        // render components
+        render(header, $('#app'))
+        render(main, $('#app'))
+        render(footer, $('#app'))
+        render(navLink, $('#headerNav #footerNav'))
+    </script>
+</body>
+</html>

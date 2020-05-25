@@ -1,0 +1,8 @@
+footer {
+    min-height: 250px;
+}
+
+footer p {
+    color: darkgray;
+    font-style: italic;
+}
