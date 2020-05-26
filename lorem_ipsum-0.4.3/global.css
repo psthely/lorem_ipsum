@@ -1,7 +1,6 @@
 /* This file contains the global CSS properties to apply to the page */
 /* *******************************************************************/
 
-@import 'components/css/header.css';
 @import 'components/css/navLink.css';
 @import 'components/css/main.css';
 @import 'components/css/footer.css';
