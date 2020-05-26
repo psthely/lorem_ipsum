@@ -7,13 +7,13 @@ const headerData = {
 
 const header = (
     '<header ' + addAttr('class', 'flex flex-column items-center') + '>\
-        <div ' + addAttr('id', 'headerLeft') + ' ' + addAttr('class', 'flex flex-column items-center') + '>\
-            <a ' + addAttr('href', headerData.href) + '><img ' + addAttr('src', headerData.imageSrc) + '></a>\
+        <div ' + addAttr('class', 'flex flex-column items-center mw-5') + '>\
+            <a ' + addAttr('href', headerData.href) + addAttr('class', 'gray no-underline f4') + '><img ' + addAttr('src', headerData.imageSrc) + addAttr('class', 'w-100') + '></a>\
             <h1><a ' + addAttr('href', headerData.href) + '>' + headerData.title + '</a></h1>\
         </div>\
-        <div ' + addAttr('id', 'headerRight') + '>\
+        <div>\
             <div ' + addAttr('id', 'headerNav') + '></div>\
-            <p>' + headerData.description + '</p>\
+            <p ' + addAttr('class', 'dark-gray tc f4 fw1 i') + '>' + headerData.description + '</p>\
         </div>\
     </header>'
 )
