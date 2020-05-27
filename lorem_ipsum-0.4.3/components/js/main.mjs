@@ -42,7 +42,7 @@ sectionsData.forEach(
 )
 
 const main = (
-    '<main ' + addAttr('class', 'flex flex-column items-center mw8') + '>'
+    '<main ' + addAttr('class', 'flex flex-column mw8') + '>'
     + sectionList +
     '</main>'
 )
