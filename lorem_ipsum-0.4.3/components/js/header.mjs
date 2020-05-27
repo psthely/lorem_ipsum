@@ -9,11 +9,11 @@ const header = (
     '<header ' + addAttr('class', 'flex flex-column items-center') + '>\
         <div ' + addAttr('class', 'flex flex-column items-center mw5') + '>\
             <a ' + addAttr('href', headerData.href) + '><img ' + addAttr('src', headerData.imageSrc) + addAttr('class', 'w-100') + '></a>\
-            <h1><a ' + addAttr('href', headerData.href) + addAttr('class', 'gray no-underline f2') + '>' + headerData.title + '</a></h1>\
+            <h1 ' + addAttr('class', 'f2') + '><a ' + addAttr('href', headerData.href) + addAttr('class', 'gray no-underline') + '>' + headerData.title + '</a></h1>\
         </div>\
         <div>\
             <div ' + addAttr('id', 'headerNav') + '></div>\
-            <p ' + addAttr('class', 'silver tc f3 fw1 i') + '>' + headerData.description + '</p>\
+            <p ' + addAttr('class', 'silver tc f4 fw1 i') + '>' + headerData.description + '</p>\
         </div>\
     </header>'
 )
