@@ -30,11 +30,11 @@ sectionsData.forEach(
     section => sectionList += (
         '<section ' + addAttr('class', 'flex flex-column items-center mv3') + '>\
             <header ' + addAttr('class', 'flex flex-column items-center') + '>\
-                <h1 ' + addAttr('class', 'f3 tc dark-blue ttu') + '>' + section.title + '</h1>\
+                <h1 ' + addAttr('class', 'f4 tc dark-blue ttu') + '>' + section.title + '</h1>\
                 <img ' + addAttr('src', section.imageSrc) + ' ' + addAttr('class', 'mw5') + '/>\
-                <h2 ' + addAttr('class', 'f4 gray') + '>' + section.description + '</h2>\
+                <h2 ' + addAttr('class', 'f4 silver') + '>' + section.description + '</h2>\
             </header>\
-            <p ' + addAttr('class', 'tj lh-copy moon-gray') + '>\
+            <p ' + addAttr('class', 'f4 tj lh-copy light-silver') + '>\
             ' + section.content + '\
             </p>\
         </section>'
