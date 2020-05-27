@@ -34,16 +34,16 @@ sectionsData.forEach(
                 <img ' + addAttr('src', section.imageSrc) + ' ' + addAttr('class', 'mw5') + '/>\
                 <h2 ' + addAttr('class', 'silver') + '>' + section.description + '</h2>\
             </header>\
-            <p ' + addAttr('class', 'f4 tj lh-copy light-silver') + '>\
-            ' + section.content + '\
-            </p>\
+            <p ' + addAttr('class', 'f4 tj lh-copy light-silver') + '>'
+                + section.content +
+            '</p>\
         </section>'
     )
 )
 
 const main = (
     '<main ' + addAttr('class', 'flex flex-column mw8 mv4') + '>'
-    + sectionList +
+        + sectionList +
     '</main>'
 )
 

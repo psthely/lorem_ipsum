@@ -8,8 +8,12 @@ const headerData = {
 const header = (
     '<header ' + addAttr('class', 'flex flex-column items-center') + '>\
         <div ' + addAttr('class', 'flex flex-column items-center mw5') + '>\
-            <a ' + addAttr('href', headerData.href) + '><img ' + addAttr('src', headerData.imageSrc) + addAttr('class', 'w-100') + '></a>\
-            <h1 ' + addAttr('class', 'f2') + '><a ' + addAttr('href', headerData.href) + addAttr('class', 'gray no-underline') + '>' + headerData.title + '</a></h1>\
+            <a ' + addAttr('href', headerData.href) + '>\
+                <img ' + addAttr('src', headerData.imageSrc) + addAttr('class', 'w-100') + '>\
+            </a>\
+            <h1 ' + addAttr('class', 'f2') + '>\
+                <a ' + addAttr('href', headerData.href) + addAttr('class', 'gray no-underline') + '>' + headerData.title + '</a>\
+            </h1>\
         </div>\
         <div>\
             <div ' + addAttr('id', 'headerNav') + '></div>\

@@ -17,10 +17,11 @@ const navLinksData = [
 let linkList = new String()
 navLinksData.forEach(
     link => linkList += (
-        '<li ' + addAttr('class', 'pa3') +
-        '><a ' + addAttr('href', link.href) +
-        ' ' + addAttr('class', 'no-underline pa2 f4 b bg-gray white') +
-        '>' + link.name + '</a></li>'
+        '<li ' + addAttr('class', 'pa3') + '>\
+            <a ' + addAttr('href', link.href) + ' ' + addAttr('class', 'no-underline pa2 f4 b bg-gray white') + '>'
+                + link.name +
+            '</a>\
+        </li>'
     )
 )
 

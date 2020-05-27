@@ -5,9 +5,9 @@ to structure Data and components.
 ## lorem_ipsum-0.4.x
 
 ### 0.4.3
-Declaring components as JavaScript modules to import in index.html. Using Tachyons classes
-to replace the global container properties. In the next versions, Tachyons classes will
-replace all the components css files.
+[Netlify demo](https://pedantic-curie-cd7ba0.netlify.app/)
+Declaring components as JavaScript modules to import in index.html. Removed the css files linked to the components
+and replace it by tachyons classes directly to the .mjs component declaration.
 
 ### 0.4.2
 The `$(selectors)` function now accepts multiple css selectors, so you can render a same
