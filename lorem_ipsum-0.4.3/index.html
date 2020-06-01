@@ -21,7 +21,8 @@
         import footer from './components/footer.mjs'
         import navLink from './components/navLink.mjs'
 
-        render(header, $('#app'))
+        constructApp([header])
+        //render(header, $('#app'))
         render(main, $('#app'))
         render(footer, $('#app'))
         render(navLink, $('#headerNav #footerNav'))
