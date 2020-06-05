@@ -1,0 +1,20 @@
+nav(class='flex flex-column mw8 mv4')
+    ul(class='flex flex-row flex-wrap justify-center list pa0')
+        -
+            var links = [
+                {
+                    name: 'Lorem',
+                    href: '#'
+                },
+                {
+                    name: 'Fusce',
+                    href: '#'
+                },
+                {
+                    name: 'Etiam',
+                    href: '#'
+                }
+            ]
+        each item in links
+            li(class='pa3'): a(href=item.href class='no-underline pa2 f4 b bg-gray white')= item.name
+        

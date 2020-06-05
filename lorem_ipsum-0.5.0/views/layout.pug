@@ -1,0 +1,9 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/tachyons.min.css')
+  body(class='flex flex-column items-center sans-serif')
+    include layout-parts/header.pug
+    block main
+    include layout-parts/footer.pug
