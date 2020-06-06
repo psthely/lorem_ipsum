@@ -2,6 +2,11 @@
 This project starts from a simple HTML/CSS static web page. Then JavaScript is added
 to structure Data and components.
 
+## lorem_ipsum-0.5.x
+The project living on node/express app, with the Pug view engine.
+The first version uses express generator skeleton app, and is a
+basic migration of the Lorem Ipsum page in Pug templating.
+
 ## lorem_ipsum-0.4.x
 
 ### 0.4.3
