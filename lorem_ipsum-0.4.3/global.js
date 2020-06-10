@@ -12,7 +12,7 @@ function addAttr(name, value) {
 // Array<{HTMLElement, string},...>: components
 function render(components) {
     components.forEach(component => {
-        $(component.parents).forEach(parent => {
+        component.parents.split(' ').forEach(parent => {
             let componentCloneNode = component.name.cloneNode(true)
             document.querySelector(parent).appendChild(componentCloneNode)
         })
