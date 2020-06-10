@@ -1,12 +1,5 @@
 'use strict'
 
-// declare the $ querySelector
-// string[]: selectors
-// return: string[]
-function $(selectors) {
-    return selectors.split(' ')
-}
-
 // add an attribute to an element
 // string: name
 // string: value
