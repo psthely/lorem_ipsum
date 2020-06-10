@@ -16,12 +16,12 @@ function addAttr(name, value) {
 }
 
 // render the app from components and parents
-// HTMLElement[ [HTMLElement, String], ... ]: components
+// Array<{HTMLElement, string},...>: components
 function render(components) {
     components.forEach(component => {
-        if( $(component[1]).length === 1 ) {
-            console.log(component[1])
-            document.querySelector(component[1].toString()).appendChild(component[0])
-        }
+        $(component.parents).forEach(parent => {
+            let componentCloneNode = component.name.cloneNode(true)
+            document.querySelector(parent).appendChild(componentCloneNode)
+        })
     })
 }

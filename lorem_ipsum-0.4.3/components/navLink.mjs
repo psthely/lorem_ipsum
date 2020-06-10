@@ -26,12 +26,14 @@ navLinksData.forEach(
 )
 
 
-const navLink = (
-    '<nav>\
-        <ul ' + addAttr('class', 'flex flex-row flex-wrap justify-center list pa0') + '>'
-            + linkList +
-        '</ul>\
-    </nav>'
+const navLinkString = (
+    '<ul ' + addAttr('class', 'flex flex-row flex-wrap justify-center list pa0') + '>'
+        + linkList +
+    '</ul>'
 )
+
+// create component
+const navLink = document.createElement('nav')
+navLink.innerHTML = navLinkString
 
 export default navLink

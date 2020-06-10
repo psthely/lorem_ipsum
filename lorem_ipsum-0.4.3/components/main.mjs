@@ -1,4 +1,4 @@
-const sectionsData = [
+const mainData = [
     {
         title: "Lorem Ipsum",
         imageSrc: "https://upload.wikimedia.org/wikipedia/commons/6/65/001-teacher.svg",
@@ -25,9 +25,9 @@ const sectionsData = [
     }
 ]
 
-let sectionList = new String()
-sectionsData.forEach(
-    section => sectionList += (
+let mainString = new String()
+mainData.forEach(
+    section => mainString += (
         '<section ' + addAttr('class', 'flex flex-column items-center mv4') + '>\
             <header ' + addAttr('class', 'flex flex-column items-center') + '>\
                 <h1 ' + addAttr('class', 'tc dark-blue ttu') + '>' + section.title + '</h1>\
@@ -41,10 +41,9 @@ sectionsData.forEach(
     )
 )
 
-const main = (
-    '<main ' + addAttr('class', 'flex flex-column mw8 mv4') + '>'
-        + sectionList +
-    '</main>'
-)
+// create component
+const main = document.createElement('main')
+main.setAttribute('class', 'flex flex-column mw8 mv4')
+main.innerHTML = mainString
 
 export default main

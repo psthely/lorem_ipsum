@@ -22,9 +22,22 @@
         import navLink from './components/navLink.mjs'
 
         render([
-            [header, '#app'],
-            [main, '#app'],
-            [footer, '#app']
+            {
+                name: header,
+                parents: '#app'
+            },
+            {
+                name: main,
+                parents: '#app'
+            },
+            {
+                name: footer,
+                parents: '#app'
+            },
+            {
+                name: navLink,
+                parents: '#headerNav #footerNav'
+            }
         ])
     </script>
 </body>
