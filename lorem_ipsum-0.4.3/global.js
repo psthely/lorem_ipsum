@@ -21,7 +21,7 @@ function render(components) {
     components.forEach(component => {
         if( $(component[1]).length === 1 ) {
             console.log(component[1])
-            document.querySelector(component[1]).appendChild(component[0])
+            document.querySelector(component[1].toString()).appendChild(component[0])
         }
     })
 }
