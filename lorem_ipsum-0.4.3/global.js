@@ -19,7 +19,9 @@ function addAttr(name, value) {
 // HTMLElement[ [HTMLElement, String], ... ]: components
 function render(components) {
     components.forEach(component => {
-        if( $(component[1]).length === 1 )
+        if( $(component[1]).length === 1 ) {
+            console.log(component[1])
             document.querySelector(component[1]).appendChild(component[0])
+        }
     })
 }
