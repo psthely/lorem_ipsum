@@ -21,11 +21,11 @@
         import footer from './components/footer.mjs'
         import navLink from './components/navLink.mjs'
 
-        constructApp([header])
-        //render(header, $('#app'))
-        render(main, $('#app'))
-        render(footer, $('#app'))
-        render(navLink, $('#headerNav #footerNav'))
+        render([
+            [header, '#app'],
+            [main, '#app'],
+            [footer, '#app']
+        ])
     </script>
 </body>
 </html>

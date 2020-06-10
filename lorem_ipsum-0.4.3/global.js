@@ -15,19 +15,11 @@ function addAttr(name, value) {
     return name + '="' + value + '"'
 }
 
-function constructApp(components) {
+// render the app from components and parents
+// HTMLElement[ [HTMLElement, String], ... ]: components
+function render(components) {
     components.forEach(component => {
-        document.getElementById('app').appendChild(component)
-    })
-}
-
-// render the component to the parents elements
-// string: component
-// string[]: parents
-function render(component, parents) {
-    let parentNode = null
-    parents.forEach(parent => {
-        parentNode = document.querySelector(parent)
-        parentNode.innerHTML += component
+        if( $(component[1]).length === 1 )
+            document.querySelector(component[1]).appendChild(component[0])
     })
 }
